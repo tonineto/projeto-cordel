@@ -1,0 +1,125 @@
+@charset "UTF-8"
+
+@charset "UTF-8"
+
+
+:root{
+
+} /*primeiro comando não funciona*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva,tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3:  'Sriracha', cursive;
+
+}
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+   
+}  /*Configurações Gerais*/
+
+
+
+html, body{
+   background-color: darkgray;
+   min-height: 100vh;
+   font-family: var(--fonte1);
+
+} /*Configurações comuns html e body*/
+
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+}
+
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps ; /*primeiras letras maiúsculas maiores*/
+    font-family: var(--fonte2);
+    font-size: 10vw;
+}
+
+header > p{
+    padding-bottom: 50px;
+    
+}
+
+a{
+    color: white;
+    text-decoration: none; /*tira o sublinhado*/
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline; /*quando passa o mouse fica sublinhado o link*/
+}
+
+
+section{
+    padding-top: 10vh;/*vh = altura da viewport*/
+    padding-bottom: 10vh; /*espaço entre as estrofes, ganhando rolagem para o efeito paralax*/
+    line-height: 2em; /*espaçamento dupla entre as letras*/
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+}
+
+section > p{
+    padding-bottom: 2em
+    
+}
+
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgba(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.541); /* sombra interna -  6px e 13px espalhamentos / 0px ampliação*/
+    background-attachment: fixed; /* efeito paralax*/
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.520);
+    display: inline-block; /* Faz com que o conteúdo se adapte ao tamanho da tela*/
+    padding: 5px; /* Dá um espaço entre o conteúdo e a section, pra não ficar colado*/
+    text-shadow: 2px 2px 0px black; /* Sombreamento nas letras espaçamentos e cores*/
+
+}
+
+section#img01{
+    background-image: url('imagens/background001.jpg') ;
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02{
+    background-size: cover;
+    background-image: url('imagens/background002.jpg')
+    
+}
+
+
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
